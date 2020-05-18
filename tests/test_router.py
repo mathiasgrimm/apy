@@ -159,5 +159,7 @@ class RouteCollectionTests:
 
 class MatcherTests:
 
-    def test_i_matches_uri(self):
-        pass
+    def test_it_matches_for_exact_uri(self):
+        route = router.Route(uri='/tests-a', methods='GET')
+        route_collection = router.RouteCollection([route])
+        matcher = router.Matcher(route_collection)

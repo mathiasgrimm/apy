@@ -114,5 +114,7 @@ class Matcher:
     def __init(self, route_collection):
         self.route_collection = route_collection
 
+    def match(self, uri, method):
+        pass
 
 
